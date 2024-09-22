@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,15 +9,21 @@ export default function Home() {
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">YUMA</h1>
           <div className="space-x-4">
-            <a href="#" className="bg-white text-black px-4 py-2 rounded">
+            <Link href="/" className="bg-white text-black px-4 py-2 rounded">
               Home
-            </a>
-            <a href="#" className="bg-white text-black px-4 py-2 rounded">
+            </Link>
+            <Link
+              href="/About"
+              className="bg-white text-black px-4 py-2 rounded"
+            >
               About
-            </a>
-            <a href="#" className="bg-white text-black px-4 py-2 rounded">
+            </Link>
+            <Link
+              href="/Portfolio"
+              className="bg-white text-black px-4 py-2 rounded"
+            >
               Portfolio
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -26,7 +33,7 @@ export default function Home() {
             <p className="text-black">
               こんにちは、芝浦工業大学に在学中のゆーまです。
               <br />
-              たくさんのことを少しずつをモットーに生活しています。
+              「たくさんのことを少しずつ」をモットーに生活しています。
             </p>
           </div>
           <div className="w-1/2 flex justify-center items-center">
