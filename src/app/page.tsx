@@ -1,26 +1,28 @@
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-
 export default function Home() {
   return (
     <div className="h-screen w-full bg-black text-white flex justify-center items-center">
       <div className="w-full max-w-screen-lg p-8 bg-gray-800 rounded-lg shadow-lg">
-        {/* ヘッダー部分 */}
+        {/* ヘッダー */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">YUMA</h1>
+          <h1 className="text-3xl font-bold underline">YUMA</h1>
           <div className="space-x-4">
-            <Link href="/" className="bg-white text-black px-4 py-2 rounded">
+            <Link
+              href="/"
+              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
+            >
               Home
             </Link>
             <Link
-              href="/About"
-              className="bg-white text-black px-4 py-2 rounded"
+              href="/about"
+              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
             >
               About
             </Link>
             <Link
-              href="/Portfolio"
-              className="bg-white text-black px-4 py-2 rounded"
+              href="/portfolio"
+              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
             >
               Portfolio
             </Link>
@@ -50,6 +52,9 @@ export default function Home() {
           </a>
           <a href="https://instagram.com/u_ma_11" className="text-white">
             <FaInstagram size={24} />
+          </a>
+          <a href="https://twitter.com/uma11_11" className="text-white">
+            <FaXTwitter size={24} />
           </a>
         </div>
       </div>
