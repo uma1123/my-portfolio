@@ -8,29 +8,29 @@ export const metadata = {
 
 export default async function Page() {
   return (
-    <div className="h-screen w-full bg-black text-white flex justify-center items-center">
-      <div className="w-full max-w-screen-lg p-8 bg-gray-800 rounded-lg shadow-lg">
+    <div className="h-screen w-full bg-gradient-to-r from-gray-900 to-gray-800 text-white flex justify-center items-center overflow-x-hidden overflow-hidden">
+      <div className="w-full h-full p-8 bg-gray-900 rounded-lg shadow-lg flex flex-col transition-transform transform hover:scale-105">
         {/* ヘッダー */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold underline">YUMA</h1>
+          <h1 className="text-4xl font-bold underline text-blue-400">YUMA</h1>
           <div className="space-x-4">
             <Link
               href="/"
-              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition duration-200"
             >
               Home
             </Link>
             <Link
               href="/about"
               scroll={false}
-              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition duration-200"
             >
               About
             </Link>
             <Link
               href="/portfolio"
               scroll={false}
-              className="bg-white text-black px-4 py-2 rounded  hover:bg-gray-300 transition duration-200"
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition duration-200"
             >
               Portfolio
             </Link>
@@ -38,10 +38,10 @@ export default async function Page() {
         </div>
 
         {/* メインコンテンツ */}
-        <section className="mb-8">
-          <h1 className="text-3xl font-bold mb-4">About ME</h1>
-          <p className="leading-relaxed">
-            はじめまして、と申します。現在はに在学しながら、に所属し、主にフロントエンドの勉強をしています。
+        <section className="mb-8 flex-grow">
+          <h1 className="text-4xl font-bold mb-4 text-center">About ME</h1>
+          <p className="leading-relaxed text-center">
+            はじめまして、ゆーまと申します。現在は芝浦工業大学に在学しながら、TechNovaに所属し、主にフロントエンドの勉強をしています。
             <br />
             これからもたくさんのことを少しずつ学んでいきたいです。
           </p>
@@ -60,7 +60,7 @@ export default async function Page() {
         {/* Skills */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-          <ul className="flex space-x-6 list-none">
+          <ul className="flex space-x-6 list-none justify-center">
             <li>
               <FaReact size={40} title="React" />
             </li>
