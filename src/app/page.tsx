@@ -37,7 +37,7 @@ export default function Home() {
             <p className="text-white text-lg leading-relaxed">
               こんにちは、ゆーまです。
               <br />
-              大学2年生です。
+              大学2年生のフロントエンド初学者です。
               <br />
               「たくさんのことを少しずつ」をモットーに生活しています。
             </p>
